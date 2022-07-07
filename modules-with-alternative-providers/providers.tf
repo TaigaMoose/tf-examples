@@ -4,18 +4,18 @@ provider "octopusdeploy" {
 }
 
 provider "octopusdeploy" {
-  alias = "default"
+  alias   = "default"
   address = "https://octopus.mindbox.ru"
   api_key = var.octopus_api_key
 }
 
 data "octopusdeploy_space" "infra" {
-  name     = "Infrastructure"
+  name = "Infrastructure"
 }
 
 provider "octopusdeploy" {
-  alias = "space_infra"
+  alias    = "space_infra"
   address  = "https://octopus.mindbox.ru"
   api_key  = var.octopus_api_key
-  space_id =data.octopusdeploy_space.infra.id
+  space_id = data.octopusdeploy_space.infra.id
 }

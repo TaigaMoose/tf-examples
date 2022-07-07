@@ -3,6 +3,6 @@ terraform {
     octopusdeploy = {
       source  = "OctopusDeployLabs/octopusdeploy"
       version = "0.7.68"
-    } 
+    }
   }
 }

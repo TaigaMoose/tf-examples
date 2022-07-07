@@ -1,5 +1,5 @@
 resource "octopusdeploy_environment" "Env" {
-  name     = "TestEnv"
+  name = "TestEnv"
 }
 
 resource "octopusdeploy_environment" "Env2" {
